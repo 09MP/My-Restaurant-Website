@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+       ;
+    }
+    .card{   
+        
+                /* box shadow  */
+        /* border: 2px solid red; */
+        background-color: rgb(170, 182, 59);
+        margin: 13px;
+        padding: 15px;
+        /* box-shadow: -10px  purple;*/ 
+        /* box-shadow: ofset x  color;*/
+
+        /* box-shadow: ofsetx ofsety  color; */
+        /* box-shadow: -10px 13px  purple; */
+
+        /* box-shadow:ofsetx ofsety blur redious color */
+        /* box-shadow: -10px 13px 10px  purple; */
+
+        /* box-shadow:ofsetx ofsety blur redious  spread redious color */
+        box-shadow: -10px 13px 10px 1px purple,-10px 13px 10px 1px rgb(0, 128, 21);
+
+        /* box-shadow: inset 2px 4px red; */
+    }
+               
+               /* text shadow  */
+
+               .card h2{
+                   text-shadow: 2px 2px rgb(168, 14, 14);
+               }
+</style>
+<body>
+
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Learn Python</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni tempore provident tempora. Corrupti,
+                obcaecati dignissimos. Dolorum nobis fugiat dignissimos architecto consequuntur deserunt, aut veniam,
+                similique praesentium natus doloremque ipsum maiores exercitationem laudantium ratione mollitia.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Learn C++</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni tempore provident tempora. Corrupti,
+                obcaecati dignissimos. Dolorum nobis fugiat dignissimos architecto consequuntur deserunt, aut veniam,
+                similique praesentium natus doloremque ipsum maiores exercitationem laudantium ratione mollitia.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Learn Java</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni tempore provident tempora. Corrupti,
+                obcaecati dignissimos. Dolorum nobis fugiat dignissimos architecto consequuntur deserunt, aut veniam,
+                similique praesentium natus doloremque ipsum maiores exercitationem laudantium ratione mollitia.</p>
+
+        </div>
+    </div>
+</body>
+
+</html>

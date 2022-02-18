@@ -1,0 +1,233 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+/* css variable  */
+
+/* body{
+background-color:rgb(95 35 255 / 76%);    
+} */
+
+/* navigation bar  */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+/* navigation bar logo and image  */
+
+#logo img{
+    
+    height: 45px;
+    width: 45px;
+    margin: 6px 19px;
+    border-radius: 49px;
+}
+
+/* navigation list */
+ #navbar ul{
+    display: flex;
+
+}
+ #navbar::before{ 
+     content: "";
+       background-color: black;
+   position: absolute;
+     height: 100%;
+     width: 100%;
+     z-index: -1;
+     opacity: 0.6;
+
+}
+ #navbar ul li{
+  list-style: none;
+  font-size: 1.3rem;
+  font-family: 'Baloo Bhai 2', cursive;
+
+}
+#navbar ul li a{
+    color: cornsilk;
+    display: block;
+    padding: 0px 31px;
+    
+    text-decoration: none;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+ color: black;
+ background-color: cornsilk;
+}
+
+/* Home sectoin  */
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 23px; */
+    /* height: -32px; */
+}
+.home::before{
+    content: "";
+    background: url('background2.jpg') no-repeat center center/cover;
+position: absolute;
+  height: 60%;
+  width: 100%;
+  z-index: -10;
+  opacity: 0.9;
+
+}
+
+
+.home h1{
+    color: black;
+     text-align: center;
+}
+.home p {
+    color: cornsilk;
+         text-align: center;
+     font-size: 1.5rem;
+}
+
+
+/* services section  */
+
+.service{
+    margin: 60px 0px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+#services .box{
+  
+    height: 389px;
+    width: 393px;
+    border: 3px solid red;
+    background-color: #ffdb07c2;
+    border-radius: 34px;
+    margin: 9px 10px;
+    padding: 19px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.services1{
+    display: flex;
+    align-self: center;
+    /* flex-direction: column; */
+}
+#services .box img{
+    display: block;
+    height: 235px;
+    border-radius: 129px;
+    width: 235px;
+    margin: auto;
+}
+#services .box p{
+    font-family: cursive;
+    margin: 4px;
+    font-size: 15px;
+}
+
+
+/* clint section  */
+#client-section{
+    height: 337px;
+  
+    /* border: 2px solid red; */
+      margin: -92px 6px;
+}
+
+#clients{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+} 
+.client-item img{
+    width: 195px;
+    height: 195px;
+    margin: -51px 51px;
+}
+ 
+/* contact section  */
+#contact{
+    position: relative;
+    margin-top: 86px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 4.8;
+    background: url(contact.jpg) no-repeat center center/cover;
+}
+#contact-box{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+#contact-box form{
+    width: 40%;
+    font-size: 1.1rem;
+    font-family:sans-serif;
+}
+#contact-box input,
+#contact-box textarea{
+    padding: 3px;
+    margin: 3px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.623);
+
+}
+
+
+footer{
+    background: black;
+    color: blanchedalmond;
+    padding: 4px;
+}
+
+ /* utility class  */
+
+ .h-primery{
+     font-size: 2.8rem;
+     padding: 45px;
+     color: black;
+     text-align: center;
+     
+ }
+ .h-secondary{
+     font-size: 50px;
+     padding: 2px;
+     text-align: center;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ .btn{
+    padding: 2px;
+    border: 3px solid  white;
+    background-color: transparent;
+    color: #e6e8ef;
+    margin: 17px;
+    border-radius: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+ }
+ .btn:hover{
+     background-color: rgb(255, 145, 0);
+     padding: 2px 5px;
+ }
+ .center{
+     text-align: center;
+ }

@@ -1,0 +1,29 @@
+/* nevigation  */
+#navbar{
+    flex-direction: column;
+
+}
+
+#logo
+
+body{
+    background-color: blue;
+}
+
+/* home */
+.home{
+    height: 210px;
+}
+/* #home{
+
+} */
+/* services */
+.services1{
+    flex-direction: column;
+}
+
+/* client section  */
+
+/* contact */
+
+/* footer  */
